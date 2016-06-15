@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="RaisedButtonStyle">
+        <!--<item name="rd_background_pressed">#3FBBBBBB</item>-->
+        <!--<item name="rd_rippleColor">#3F888888</item>-->
+        <!--<item name="rd_rippleAnimDuration">1000</item>-->
+        <!--<item name="rd_backgroundAnimDuration">200</item>-->
+        <!--<item name="rd_cornerRadius">2dip</item>-->
+
+        <!-- change shadow -->
+        <!--<item name="rd_background_shadow">@drawable/abc_menu_dropdown_panel_holo_light</item>-->
+        <!--<item name="rd_leftPadding">6dp</item>-->
+        <!--<item name="rd_topPadding">7dp</item>-->
+        <!--<item name="rd_rightPadding">6dp</item>-->
+        <!--<item name="rd_bottomPadding">7dp</item>-->
+    </style>
+
+
+    <style name="RkProgressStyle" parent="@android:style/Theme.DeviceDefault.Light.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+
+</resources>

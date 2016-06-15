@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/RikkeiAndroidCommonLib.iml" filepath="$PROJECT_DIR$/RikkeiAndroidCommonLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SNSLib/SNSLib.iml" filepath="$PROJECT_DIR$/SNSLib/SNSLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/customviewlib/customviewlib.iml" filepath="$PROJECT_DIR$/customviewlib/customviewlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/httplib/httplib.iml" filepath="$PROJECT_DIR$/httplib/httplib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample/sample.iml" filepath="$PROJECT_DIR$/sample/sample.iml" />
+    </modules>
+  </component>
+</project>

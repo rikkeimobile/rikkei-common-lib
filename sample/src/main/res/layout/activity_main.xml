@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:rikkei="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                tools:context="rikkei.android.common.sample.MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <rikkei.android.customview.lib.RkRippleButton
+                android:id="@+id/rkRipple_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:enabled="false"
+                android:text="Ripple Effect"
+                rikkei:rikkei_ripple_color="@color/colorPrimaryDark"
+                rikkei:rikkei_ripple_duration="500"/>
+
+            <rikkei.android.customview.lib.RkRaisedButton
+                android:id="@+id/view"
+                android:layout_width="200dip"
+                android:layout_height="60dip"
+                android:layout_below="@+id/rkRipple_circle"
+                android:text="Raised Button"
+                rikkei:rk_ripple_anim_duration="500"
+                rikkei:rk_ripple_color="#BB888888"/>
+
+
+            <rikkei.android.customview.lib.RkFlatButton
+                android:id="@+id/view2"
+                android:layout_width="200dip"
+                android:layout_height="50dip"
+                android:layout_below="@+id/view"
+                android:layout_gravity="center_horizontal"
+                android:text="Flat button"
+                rikkei:rk_ripple_anim_duration="400"/>
+
+            <rikkei.android.customview.lib.RkClearableEditText
+                android:id="@+id/edt_clearable"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_below="@+id/view2"
+                android:layout_margin="10dip"
+                android:hint="ClearableEditText"
+                android:singleLine="true"
+                rikkei:cet_icon="@android:drawable/ic_delete"
+                rikkei:cet_icon_location="right"/>
+
+            <Button
+                android:id="@+id/test_twitter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/edt_clearable"
+                android:layout_alignStart="@+id/edt_clearable"
+                android:layout_below="@+id/edt_clearable"
+                android:text="Demo Twitter"
+                android:layout_toLeftOf="@+id/button"
+                android:layout_toStartOf="@+id/button"/>
+
+
+
+            <rikkei.android.customview.lib.RkRoundedImageView
+                android:id="@+id/rkcicleimange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/test_twitter"
+                android:scaleType="centerCrop"
+                android:src="@drawable/images"
+                rikkei:rikkei_riv_border_color="@color/colorAccent"
+                rikkei:rikkei_riv_border_width="5dp"
+                rikkei:rikkei_riv_circle="true"/>
+
+            <rikkei.android.customview.lib.RkRoundedImageView
+                android:id="@+id/rkovalimange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rkcicleimange"
+                android:scaleType="centerCrop"
+                android:src="@drawable/images"
+                rikkei:rikkei_riv_border_color="@color/red"
+                rikkei:rikkei_riv_border_width="5dp"
+                rikkei:rikkei_riv_oval="true"/>
+
+            <rikkei.android.customview.lib.RkRoundedImageView
+                android:id="@+id/rkrectangeimange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rkovalimange"
+                android:scaleType="centerCrop"
+                android:src="@drawable/images"
+                rikkei:rikkei_riv_border_color="@color/colorPrimary"
+                rikkei:rikkei_riv_border_width="5dp"
+                rikkei:rikkei_riv_corner_radius="15dp"/>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Demo Facebook"
+                android:layout_alignTop="@+id/test_twitter"
+                android:layout_toRightOf="@+id/rkcicleimange"
+                android:layout_toEndOf="@+id/rkcicleimange"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

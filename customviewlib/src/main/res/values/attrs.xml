@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RkRippleButton">
+        <attr name="rikkei_ripple_color" format="color" />
+        <attr name="rikkei_ripple_alpha" format="integer" />
+        <attr name="rikkei_ripple_duration" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundedImageView">
+        <attr name="rikkei_riv_corner_radius" format="dimension" />
+        <attr name="rikkei_riv_corner_radius_top_left" format="dimension" />
+        <attr name="rikkei_riv_corner_radius_top_right" format="dimension" />
+        <attr name="rikkei_riv_corner_radius_bottom_left" format="dimension" />
+        <attr name="rikkei_riv_corner_radius_bottom_right" format="dimension" />
+        <attr name="rikkei_riv_border_width" format="dimension" />
+        <attr name="rikkei_riv_border_color" format="color" />
+        <attr name="rikkei_riv_oval" format="boolean" />
+        <attr name="rikkei_riv_circle" format="boolean" />
+        <attr name="android:scaleType" />
+    </declare-styleable>
+
+    <declare-styleable name="RkRaisedButton">
+        <attr name="rk_ripple_color" format="reference|color"/>
+        <attr name="rk_ripple_anim_duration" format="reference|integer"/>
+        <attr name="rk_backgroundAnimDuration" format="reference|integer"/>
+        <attr name="rk_background_pressed" format="reference|color"/>
+        <attr name="rk_background_shadow" format="reference|color"/>
+        <attr name="rk_interpolator" format="reference"/>
+        <attr name="rk_cornerRadius" format="reference|dimension"/>
+        <attr name="rk_topLeftCornerRadius" format="reference|dimension"/>
+        <attr name="rk_topRightCornerRadius" format="reference|dimension"/>
+        <attr name="rk_bottomLeftCornerRadius" format="reference|dimension"/>
+        <attr name="rk_bottomRightCornerRadius" format="reference|dimension"/>
+        <attr name="rk_padding" format="reference|dimension"/>
+        <attr name="rk_leftPadding" format="reference|dimension"/>
+        <attr name="rk_topPadding" format="reference|dimension"/>
+        <attr name="rk_rightPadding" format="reference|dimension"/>
+        <attr name="rk_bottomPadding" format="reference|dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="RkClearableEditText">
+        <attr name="cet_icon_location" format="enum">
+            <enum name="left" value="0"></enum>
+            <enum name="right" value="2"></enum>
+        </attr>
+        <attr name="cet_icon" format="reference"/>
+    </declare-styleable>
+
+</resources>

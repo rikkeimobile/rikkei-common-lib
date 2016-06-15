@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="rikkei.android.common.sample.FileUtilActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_title_as"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Access file in Assets"/>
+
+        <RelativeLayout
+            android:id="@+id/rlt_assets"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title_as">
+
+            <View
+                android:id="@+id/center"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:layout_centerHorizontal="true"/>
+
+            <Button
+                android:id="@+id/bt_as_listfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/center"
+                android:onClick="listFileAssets"
+                android:text="ListFile"/>
+
+            <Button
+                android:id="@+id/bt_as_listfile_path"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/bt_as_listfile"
+                android:onClick="listFilePathAssets"
+                android:text="ListFileByPath"/>
+
+            <Button
+                android:onClick="readTextFileAssets"
+                android:id="@+id/bt_as_read_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bt_as_listfile"
+                android:layout_toLeftOf="@id/center"
+                android:text="ReadText"/>
+
+            <Button
+                android:onClick="readBitmapFileAssets"
+                android:id="@+id/bt_as_read_bm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bt_as_listfile_path"
+                android:layout_toRightOf="@id/center"
+                android:text="ReadBitmap"/>
+
+            <Button
+                android:id="@+id/bt_as_input_steam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bt_as_read_bm"
+                android:text="GetFileInputStream"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_title_sd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rlt_assets"
+            android:text="Access file in SdCard"/>
+
+        <RelativeLayout
+            android:id="@+id/rlt_sdcard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title_sd">
+
+            <View
+                android:id="@+id/center_sd"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"/>
+
+            <Button
+                android:onClick="listFileSd"
+                android:id="@+id/bt_sd_listfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ListFile"/>
+
+            <Button
+                android:onClick="readTextFileSd"
+                android:id="@+id/bt_sd_read_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bt_sd_listfile"
+                android:layout_toLeftOf="@id/center_sd"
+                android:text="ReadText"/>
+
+            <Button
+                android:onClick="readBitmapFileSd"
+                android:id="@+id/bt_sd_read_bm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bt_sd_listfile"
+                android:layout_toRightOf="@id/center_sd"
+                android:text="ReadBitmap"/>
+
+            <Button
+                android:id="@+id/bt_sd_input_steam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bt_sd_read_bm"
+                android:text="GetFileInputStream"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bt_sd_input_steam">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Create dir"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Create file"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Copy file"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/fm_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/rlt_sdcard"/>
+    </RelativeLayout>
+</ScrollView>

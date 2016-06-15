@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:rikkei="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <rikkei.android.customview.lib.RkRaisedButton
+        android:id="@+id/view"
+        android:layout_width="200dip"
+        android:layout_height="60dip"
+        android:layout_below="@+id/rkRipple_circle"
+        android:enabled="false"
+        android:text="Raised Button"
+        rikkei:rk_ripple_anim_duration="300"/>
+
+    <rikkei.android.customview.lib.RkClearableEditText
+        android:id="@+id/edt_clearable"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_below="@+id/view"
+        android:layout_margin="10dip"
+        android:hint="ClearableEditText"
+        android:singleLine="true"
+        rikkei:cet_icon="@android:drawable/ic_delete"
+        rikkei:cet_icon_location="right"
+        />
+
+    <rikkei.android.customview.lib.RkFlatButton
+        android:id="@+id/view2"
+        android:layout_width="200dip"
+        android:layout_height="60dip"
+        android:text="Flat button"/>
+
+    <com.twitter.sdk.android.core.identity.TwitterLoginButton
+        android:id="@+id/twitter_login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+
+
+</LinearLayout>

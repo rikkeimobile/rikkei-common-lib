@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">sample</string>
+    <string name="title_dialog_test">Title Dialog Test</string>
+    <string name="message_dialog_test">Message Dialog Test</string>
+
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="facebook_app_id">978627132233817</string>
+</resources>
