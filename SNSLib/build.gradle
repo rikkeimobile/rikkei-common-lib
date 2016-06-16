@@ -45,3 +45,31 @@ dependencies {
     }
 
 }
+
+//###Need only for upload to maven repository (bintray.com)####
+//ext {
+//    bintrayRepo = 'maven'
+//    bintrayName = 'SNSLib'
+//
+//    publishedGroupId = 'rikkei.android'
+//    libraryName = 'SNSLib'
+//    artifact = 'SNSLib'
+//
+//    libraryDescription = 'Rikkei SNSLib'
+//
+//    siteUrl = 'https://github.com/rikkeimobile/rikkei-common-lib'
+//    gitUrl = 'https://github.com/rikkeimobile/rikkei-common-lib.git'
+//
+//    libraryVersion = '1.0'
+//
+//    developerId = 'rikkeimobile'
+//    developerName = 'rikkei mobile test'
+//    developerEmail = 'rikkei.mobile.test@gmail.com'
+//
+//    licenseName = 'The Apache Software License, Version 2.0'
+//    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+//    allLicenses = ["Apache-2.0"]
+//}
+//
+//apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+//apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'

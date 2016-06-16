@@ -1,1 +1,2 @@
-include ':common', ':sample', ':httplib', ':customviewlib', ':SNSLib'
+include  ':sample'
+//, ':common',':httplib', ':customviewlib', ':SNSLib'
