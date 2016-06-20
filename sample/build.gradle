@@ -2,7 +2,6 @@ apply plugin: 'com.android.application'
 buildscript {
     repositories {
         maven { url 'https://maven.fabric.io/public' }
-        maven { url 'https://dl.bintray.com/rikkeimobile/maven/' }
     }
 
     dependencies {
@@ -13,7 +12,6 @@ buildscript {
 
 repositories {
     maven { url 'https://maven.fabric.io/public' }
-    maven { url 'https://dl.bintray.com/rikkeimobile/maven/' }
 }
 
 
@@ -39,11 +37,10 @@ android {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
 
-    compile('rikkei.android:common:1.0@aar');
-    compile('rikkei.android:httplib:1.0@aar');
-    compile('rikkei.android:customviewlib:1.0@aar');
-    compile('rikkei.android:SNSLib:1.0@aar'){
-        transitive = true;
-    }
+
+    compile('rikkei.android:common:1.0');
+    compile('rikkei.android:httplib:1.0');
+    compile('rikkei.android:customviewlib:1.0');
+    compile('rikkei.android:SNSLib:1.0');
 
 }

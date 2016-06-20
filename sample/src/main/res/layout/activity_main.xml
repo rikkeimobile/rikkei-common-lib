@@ -26,7 +26,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:enabled="false"
+                android:enabled="true"
                 android:text="Ripple Effect"
                 rikkei:rikkei_ripple_color="@color/colorPrimaryDark"
                 rikkei:rikkei_ripple_duration="500"/>
