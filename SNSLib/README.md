@@ -42,6 +42,7 @@ Put statement:
       RkTwitterUtils.init(Context context, String consumerKey , String consumerSecret)
 	  to first line of onCreate() method of every Activity
 	(Sign Up an account, login to https://apps.twitter.com/ and create an Application to get **consumerKey**, **consumerSecret** keys)
+	
 Put statement: 
       RkTwitterUtils.getInstance().onActivityResult(requestCode, resultCode, data);
       to onActivityResult()  of activity

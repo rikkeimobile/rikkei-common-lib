@@ -1,4 +1,4 @@
-## Getting Started
+## Usage
 
 [How to use **common** module](https://github.com/rikkeimobile/rikkei-common-lib/tree/master/common/README.md)
 
